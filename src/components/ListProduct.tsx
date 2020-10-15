@@ -14,10 +14,8 @@ const Product = () => {
       console.log(listProduct);
     },);
     const handleAddProduct = () =>{
-      history.push('/1/0')
+      history.push('/product/0')
     }
-    
-   
   return (
       <div>
         <ButtonToggle onClick={handleAddProduct}> Thêm sản phẩm</ButtonToggle>
@@ -42,14 +40,13 @@ const Product = () => {
                   <td>{item.price}</td>
                   <td>
                   <ButtonToggle onClick={()=>{
-                    history.push(`/1/${item.id}`)
+                    history.push(`/product/${item.id}`)
                   }}> Chỉnh sửa</ButtonToggle>
                   </td>
                   <td>
                   <ButtonToggle onClick={()=>{
                           dispatch(del(item.id));
-                          
-                              }}> Xoá</ButtonToggle>
+                            }}> Xoá</ButtonToggle>
                   </td>
                 </tr>
               );

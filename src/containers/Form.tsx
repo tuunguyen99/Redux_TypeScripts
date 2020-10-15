@@ -9,9 +9,9 @@ import {useEffect } from "react";
 import { Field, reduxForm,initialize } from "redux-form";
 import {list} from "../slices/formSlice"
 import { useSelector, useDispatch } from 'react-redux';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 interface IProps {
-  props: any;
+  form: string
  }
 
 

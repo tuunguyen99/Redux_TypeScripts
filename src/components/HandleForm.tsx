@@ -21,7 +21,6 @@ const HandleForm =() => {
     }else{
       dispatch(edit({...values,id:editID}))
     }
-    
     // print the form values to the console
     setSubmited(true)
   }

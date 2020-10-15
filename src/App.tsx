@@ -11,14 +11,11 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Header />
+        <Header/>
         <Switch>
-          <Route exact path="/" component={ListProduct}>
-          </Route>
-          <Route path="/1/:id" component={HandleForm}>
-          </Route>
-          <Route path='/' component={Page404}>
-          </Route>
+        <Route path="/" exact component={ListProduct} />
+        <Route path="/product/:id" exact component={HandleForm} />
+        <Route component={Page404}/>
         </Switch>
       </Router>
     </div>

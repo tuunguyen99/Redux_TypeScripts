@@ -68,5 +68,8 @@ module.exports = {
             filename: "./src/yourfile.css",
         }),
     ],
-    devtool: 'inline-source-map'
+    devtool: 'inline-source-map',
+    devServer: {
+        historyApiFallback: true
+    }
 };

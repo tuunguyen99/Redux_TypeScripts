@@ -22,6 +22,9 @@ module.exports = {
         }
     },
     resolve: {
+        alias: {
+            form:path.resolve(__dirname,'./src/redux-toolkit/form/')
+        },
         extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
     },
     module: {

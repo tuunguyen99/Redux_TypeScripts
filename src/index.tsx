@@ -2,16 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import App from "./App";
 import { Provider } from "react-redux";
-import { configureStore } from "@reduxjs/toolkit";
-import addformReducer from "./slices/formSlice"
-import { reducer as formReducer } from 'redux-form';
-
-const store = configureStore({
-  reducer: {
-    form: formReducer,
-    addform: addformReducer,
-  },
-});
+import store from './redux-toolkit/rootStore'
 
 ReactDOM.render(
   <React.StrictMode>

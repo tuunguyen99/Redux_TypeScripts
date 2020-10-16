@@ -1,12 +1,12 @@
 import * as React from "react";
 import { useEffect } from 'react';
 import { Table, ButtonToggle } from 'reactstrap';
-import {del,list} from "../slices/formSlice"
+import {del,list} from "form/formSlice"
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 
-const Product = () => {
+const ListProduct = () => {
     var history = useHistory();
     const listProduct = useSelector(list);
     const dispatch = useDispatch();
@@ -60,4 +60,4 @@ const Product = () => {
   );
 }
 
-export default Product;
+export default ListProduct;

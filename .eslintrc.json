@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+      "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+    "settings": {
+        "import/resolver": {
+          "alias": {
+            "map": [["@", "./src"],["form","./src/redux-toolkit/form"]]
+
+          }
+        }
+      }
+}

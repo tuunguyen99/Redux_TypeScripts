@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react'
 import Form from '../containers/Form';
-import {add,list,del,edit} from '../slices/formSlice'
+import { add, list, edit } from 'form/formSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
 interface RouteParams {
@@ -37,4 +37,4 @@ const HandleForm =() => {
       )
   
 }
-export default HandleForm;
+export default HandleForm; 

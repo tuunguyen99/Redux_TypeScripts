@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import TextField from '@material-ui/core/TextField'
 import {useEffect } from "react";
 import { Field, reduxForm,initialize } from "redux-form";
-import {list} from "../slices/formSlice"
+import { list } from "form/formSlice";
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 interface IProps {
